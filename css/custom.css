@@ -1,0 +1,13 @@
+body {
+    /*background: black;*/
+}
+
+#greetings {
+    color: red;
+    font-size: 4em;
+}
+
+.card a {
+    color: white;
+    text-transform: uppercase;
+}
