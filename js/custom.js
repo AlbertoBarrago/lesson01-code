@@ -152,7 +152,7 @@ const appendPersonCard = (e) => {
                                       <li class="list-group-item">Registered: ${e.registered.date}</li>
                                     </ul>
                                 </p>
-                                <a class="btn btn-info w-100" target="_blank" href="https://www.google.it/maps/@3${e.location.coordinates.latitude},${e.location.coordinates.longitude}">ciao</a>
+                                <a class="btn btn-info w-100" target="_blank" href="https://www.google.it/maps/@${e.location.coordinates.latitude},${e.location.coordinates.longitude}">Open map</a>
                               </div>
                             </div>
                          </div>`
