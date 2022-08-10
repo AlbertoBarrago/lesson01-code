@@ -142,12 +142,13 @@ const getPersons = () => {
 const appendPersonCard = (e) => {
     let templatePopulated = `<div class="col mt-3 mb-4">
                             <div class="card" style="width: 18rem;">
-                              <img src="${e.picture.medium}" class="card-img-top" alt="image_card">
+                              <img src="${e.picture.large}" class="card-img-top" alt="image_card">
                               <div class="card-body">
                                 <h5 class="card-title">${e.name.first} - ${e.name.last} </h5>
                                 <p class="card-text">
                                     <ul class="list-group">
-                                      <li class="list-group-item">Gender: ${e.id.value}</li>
+                                      <li class="list-group-item">Id: ${e.id.value ? e.id.value: "Non disponibile"}</li>
+                                      <li class="list-group-item">Gender: ${e.gender}</li>
                                       <li class="list-group-item">Number: ${e.cell}</li>
                                       <li class="list-group-item">Registered: ${e.registered.date}</li>
                                     </ul>
